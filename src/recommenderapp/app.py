@@ -1,9 +1,5 @@
-"""
-Copyright (c) 2023 Nathan Kohen, Nicholas Foster, Brandon Walia, Robert Kenney
-This code is licensed under MIT license (see LICENSE for details)
 
-@author: PopcornPicks
-"""
+
 # pylint: disable=wrong-import-position
 # pylint: disable=wrong-import-order
 # pylint: disable=import-error
@@ -34,12 +30,21 @@ from src.prediction_scripts.item_based import recommend_for_new_user
 
 sys.path.remove("../../")
 
-
 app = Flask(__name__)
 app.secret_key = "secret key"
 
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 user = {1: None}
+
+# Add the route for the watchlist page
+@app.route("/watchlist")
+def watchlist_page():
+    """
+    Renders the watchlist page.
+    """
+    if user[1] is not None or user[1] == "guest":
+        return render_template("watchlist.html")
+    return render_template("login.html")
 
 
 @app.route("/")
@@ -53,7 +58,7 @@ def login_page():
 @app.route("/profile")
 def profile_page():
     """
-    Renders the login page.
+    Renders the profile page.
     """
     if user[1] is not None:
         return render_template("profile.html")
@@ -270,7 +275,7 @@ def before_request():
     load_dotenv()
     g.db = mysql.connector.connect(
         user="root",
-        password=os.getenv("DB_PASSWORD"),
+        password=os.getenv("DB_PASSWORD", "assasin77"),
         host="127.0.0.1",
         database="popcornpicksdb",
     )
@@ -287,3 +292,4 @@ def after_request(response):
 
 if __name__ == "__main__":
     app.run(port=5000)
+
