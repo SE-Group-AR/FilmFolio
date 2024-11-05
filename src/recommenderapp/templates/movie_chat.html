@@ -1,0 +1,46 @@
+<!--
+Copyright (c) 2024 Abhinav Jami, Meet Patel, Anchita Ramani
+This code is licensed under MIT license (see LICENSE for details)
+
+@author: FilmFolio
+-->
+{% extends 'shared/layout.html' %}
+
+{% block extracss %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chat.css') }}">
+{% endblock %}
+
+{% block extrajs %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}
+
+{% block maincontent %}
+<div class="container" style="margin-top: 60px;" id="centralDivLanding">
+  <div class="heading1"><br><br><br><br>
+    <h2><center>Chat about movies!</center></h2>
+  </div>
+    <div class="card d-flex flex-column">
+    <div class="card-header text-secondary">
+        Live Movie Chat
+    </div>
+    <ul id="message_list" class="list-group flex-grow-1 overflow-auto"></ul>
+    <form id="form" class="form-inline" action="" onsubmit="submiter(); return false;">
+        <div class="form-group">
+            <input id="input" class="form-control mr-2" autocomplete="off" />
+        </div>
+        <button type="submit" class="btn btn-primary ms-2">Send</button>
+    </form>
+</div>
+
+</div>
+    <script>function submiter() {
+        /*function needs to be in here the user can be sent over to the js*/
+    /* Connects directly to when someone clicks the button to send a message */
+    var msg = document.getElementById('input');
+    console.log(msg)
+    socket.emit('message', { username: '{{user}}', msg: msg.value });
+    msg.value = ''; /* removes whats in your input form */
+    return false; /* makes sure the web page doesn't just refresh */
+}</script>
+{% endblock %}

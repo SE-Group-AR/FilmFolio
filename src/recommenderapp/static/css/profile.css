@@ -1,0 +1,88 @@
+/* Profile Card Styling */
+.profile-card {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-title {
+  color: #3498db;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* User Details Styling */
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  background-color: #f7f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-icon {
+  margin-right: 10px;
+  color: #3498db;
+  font-size: 1.3rem;
+}
+
+/* Movie Card Styling */
+.movie-card {
+  background-color: #ecf0f1;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card h3 {
+  font-size: 1.6rem;
+  color: #34495e;
+  margin: 10px 0;
+}
+
+.movie-card p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-footer {
+  background-color: #dfe6e9;
+  color: #636e72;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+}
+
+/* Hide IMDb ID */
+.imdbId {
+  display: none;
+}
