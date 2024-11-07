@@ -1,13 +1,12 @@
 """
-Copyright (c) 2023 Aditya Pai, Ananya Mantravadi, Rishi Singhal, Samarth Shetty
+Copyright (c) 2024 Abhinav Jami, Meet Patel, Anchita Ramani
 This code is licensed under MIT license (see LICENSE for details)
 
-@author: PopcornPicks
+@author: FilmFolio
 """
 import os
 import pandas as pd
 
-# from flask import jsonify, request, render_template
 
 
 app_dir = os.path.dirname(os.path.abspath(__file__))
@@ -70,5 +69,4 @@ class Search:
         return self.results(word)[:10]
 
 
-# if __name__ == "__main__":
-#    app.run()
+

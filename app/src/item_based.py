@@ -1,8 +1,8 @@
 """
-Copyright (c) 2023 Aditya Pai, Ananya Mantravadi, Rishi Singhal, Samarth Shetty
+Copyright (c) 2024 Abhinav Jami, Meet Patel, Anchita Ramani
 This code is licensed under MIT license (see LICENSE for details)
 
-@author: PopcornPicks
+@author: FilmFolio
 """
 
 import os
@@ -11,7 +11,6 @@ import pandas as pd
 app_dir = os.path.dirname(os.path.abspath(__file__))
 code_dir = os.path.dirname(app_dir)
 project_dir = os.path.dirname(code_dir)
-
 
 def recommend_for_new_user(user_rating):
     """
@@ -35,22 +34,14 @@ def recommend_for_new_user(user_rating):
 
     movies_genre_filled = movies_genre_filled.fillna(0)
 
-    user_genre = movies_genre_filled[
-        movies_genre_filled.movieId.isin(user_ratings.movieId)
-    ]
-    user_genre.drop(
-        ["movieId", "title", "genres", "imdb_id", "overview", "poster_path", "runtime"],
-        axis=1,
-        inplace=True,
-    )
+    user_genre = movies_genre_filled[movies_genre_filled.movieId.isin(user_ratings.movieId)]
+    user_genre.drop(["movieId", "title", "genres", "imdb_id", "overview", "poster_path", "runtime"],
+                     axis=1, inplace=True)
     user_profile = user_genre.T.dot(user_ratings.rating.to_numpy())
 
     movies_genre_filled.set_index(movies_genre_filled.movieId)
-    movies_genre_filled.drop(
-        ["movieId", "title", "genres", "imdb_id", "overview", "poster_path", "runtime"],
-        axis=1,
-        inplace=True,
-    )
+    movies_genre_filled.drop(["movieId", "title", "genres", "imdb_id", "overview", "poster_path",
+                               "runtime"], axis=1, inplace=True)
 
     recommendations = (movies_genre_filled.dot(user_profile)) / user_profile.sum()
 
@@ -59,9 +50,4 @@ def recommend_for_new_user(user_rating):
     join_movies_and_recommendations.sort_values(
         by="recommended", ascending=False, inplace=True
     )
-
-    return (
-        list(join_movies_and_recommendations["title"][:201]),
-        list(join_movies_and_recommendations["genres"][:201]),
-        list(join_movies_and_recommendations["imdb_id"][:201]),
-    )
+    return join_movies_and_recommendations[:10]
