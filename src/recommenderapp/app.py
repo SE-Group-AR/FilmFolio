@@ -26,7 +26,7 @@ from utils import (
 from search import Search
 
 sys.path.append("../../")
-from src.prediction_scripts.item_based import recommend_for_new_user
+from recommenderapp.item_based import recommend_for_new_user
 
 sys.path.remove("../../")
 
