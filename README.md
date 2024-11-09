@@ -175,9 +175,9 @@ Please refer to the [CONTRIBUTING.md](https://github.com/sE-Group-AR/FilmFolio/b
 <table>
   <tr>
     <td><a href="https://github.com/sE-Group-AR/FilmFolio">Project 3</a></td>
-    <td align="center"><a href="https://github.com/mpatel029/">
-    <td align="center"><a href="https://github.com/Anchita15/">
-    <td align="center"><a href="https://github.com/AbhinavJ02/">
+    <td align="center"><a href="https://github.com/mpatel029/"><br /><sub><b>Meet Patel</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Anchita15/"><br /><sub><b>Anchita Ramani</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/AbhinavJ02/"><br /><sub><b>Abhinav Jami</b></sub></a><br /></td>
   </tr>
 </table>
 
@@ -185,9 +185,8 @@ Please refer to the [CONTRIBUTING.md](https://github.com/sE-Group-AR/FilmFolio/b
 [Anchita Ramani](https://www.linkedin.com/in/anchita-ramani-874277188/)<br/>
 [Abhinav Jami](https://www.linkedin.com/in/abhinavjami/)<br/>
 
-
 ## Contact
-In case of any issues, please e-mail your queries to filmfolio777@gmail.com or raise an issue on this repository.<br>
+In case of any issues, please e-mail your queries to filmfolio1@gmail.com or raise an issue on this repository.<br>
 Our team of developers monitors this e-mail address and would be happy to answer any and all questions you have about setup or use of this project!
 
 ## Join the FilmFolio Community:
