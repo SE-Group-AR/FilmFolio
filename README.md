@@ -148,7 +148,7 @@ Our grading scorecard can be found [here](https://github.com/sE-Group-AR/FilmFol
  Step 2:
    Follow the setup instructions in the installation documentation
    
-    https://github.com/sE-Group-AR/FilmFolio/blob/master/docs/install.md
+    https://github.com/SE-Group-AR/FilmFolio/wiki
     
     
 <b>Finally, start enjoying personalized movie recommendations!</b>
