@@ -1,8 +1,8 @@
 """
-Copyright (c) 2024 Abhinav Jami, Meet Patel, Anchita Ramani
+Copyright (c) 2023 Abhinav Sinha, Chandana Ray, Sam Kwiatkowski-Martin, Tanmay Pardeshi
 This code is licensed under MIT license (see LICENSE for details)
 
-@author: FilmFolio
+@author: PopcornPicks
 """
 
 import os
