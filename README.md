@@ -175,16 +175,16 @@ Please refer to the [CONTRIBUTING.md](https://github.com/sE-Group-AR/FilmFolio/b
 <table>
   <tr>
     <td><a href="https://github.com/sE-Group-AR/FilmFolio">Project 3</a></td>
-    <td align="center"><a href="https://github.com/mpatel029/"><img src="https://avatars.githubusercontent.com/" width="75px;" alt=""/><br /><sub><b>Meet Patel</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Anchita15/"><img src="https://avatars.githubusercontent.com/" width="75px;" alt=""/><br /><sub><b>Anchita Ramani</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/AbhinavJ02/"><img src="https://avatars.githubusercontent.com/" width="75px;" alt=""/><br /><sub><b>Abhinav Jami</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/mpatel029/">
+    <td align="center"><a href="https://github.com/Anchita15/">
+    <td align="center"><a href="https://github.com/AbhinavJ02/">
   </tr>
 </table>
 
-[Aditya Pai Brahmavar](https://www.linkedin.com/in/adityapai16/)<br/>
-[Ananya Mantravadi](https://www.linkedin.com/in/ananya-mantravadi/)<br/>
-[Rishi Singhal](https://www.linkedin.com/in/rishi-singhal1101/)<br/>
-[Samarth Shetty](https://www.linkedin.com/in/samarthshetty09/)<br/>
+[Meet Patel](https://www.linkedin.com/in/meetpatel-ncsu/)<br/>
+[Anchita Ramani](https://www.linkedin.com/in/anchita-ramani-874277188/)<br/>
+[Abhinav Jami](https://www.linkedin.com/in/abhinavjami/)<br/>
+
 
 ## Contact
 In case of any issues, please e-mail your queries to filmfolio777@gmail.com or raise an issue on this repository.<br>
