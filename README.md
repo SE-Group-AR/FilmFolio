@@ -175,9 +175,9 @@ Please refer to the [CONTRIBUTING.md](https://github.com/sE-Group-AR/FilmFolio/b
 <table>
   <tr>
     <td><a href="https://github.com/sE-Group-AR/FilmFolio">Project 3</a></td>
-    <td align="center"><a href="https://github.com/mpatel029/"><img src="https://avatars.githubusercontent.com/u/99231385?v=4" width="75px;" alt=""/><br /><sub><b>Meet Patel</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Anchita15/"><img src="https://avatars.githubusercontent.com/u/144182217?v=4" width="75px;" alt=""/><br /><sub><b>Anchita Ramani</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/AbhinavJ02/"><img src="https://avatars.githubusercontent.com/u/70106196?v=4" width="75px;" alt=""/><br /><sub><b>Abhinav Jami</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/mpatel029/"><img src="https://avatars.githubusercontent.com/" width="75px;" alt=""/><br /><sub><b>Meet Patel</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Anchita15/"><img src="https://avatars.githubusercontent.com/" width="75px;" alt=""/><br /><sub><b>Anchita Ramani</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/AbhinavJ02/"><img src="https://avatars.githubusercontent.com/" width="75px;" alt=""/><br /><sub><b>Abhinav Jami</b></sub></a><br /></td>
   </tr>
 </table>
 
