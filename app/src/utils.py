@@ -1,9 +1,9 @@
 # pylint: disable=cyclic-import
 """
-Copyright (c) 2023 Abhinav Sinha, Chandana Ray, Sam Kwiatkowski-Martin, Tanmay Pardeshi
+Copyright (c) 2024 Anchita Ramani, Meet Patel, Abhinav Jami
 This code is licensed under MIT license (see LICENSE for details)
 
-@author: PopcornPicks
+@author: FilmFolio
 """
 import logging
 import smtplib
