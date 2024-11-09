@@ -3,7 +3,7 @@
   
 
   
-<img src="https://github.com/sE-Group-AR/FilmFolio/blob/master/asset/header_display.png" alt="drawing" style="width:1000px;"/>
+<img src="https://github.com/sE-Group-AR/FilmFolio/blob/master/asset/movies-list.gif" alt="drawing" style="width:1000px;"/>
 <b>FilmFolio is more than just a movie recommender system; it's a gateway to a world of cinematic adventures. With an ever-expanding library of films and a powerful recommendation algorithm, FilmFolio is here to transform the way you discover, enjoy, and connect with movies.</b>
 
 # Contents  
