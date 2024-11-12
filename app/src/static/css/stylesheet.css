@@ -1,81 +1,80 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-  }
-  
-  .landing-page {
-    background-image: url("/static/images/image.jpg");
-    background-size: cover;
-    color: azure !important;
-    margin-left: 200px; /* Space for the navbar */
-    height: 100vh; /* Full height */
-  }
-  
-  .navbar {
-    width: 200px; /* Fixed width for the vertical navbar */
-    position: fixed; /* Fixed position on the left side */
-    top: 0;
-    left: 0; /* Sticks to the left margin */
-    height: 100%; /* Full height */
-    z-index: 999; /* Ensure it stays above other content */
-    padding-top: 1rem; /* Space at the top */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
-    background-color: #343a40; /* Same as bg-dark */
-    display: flex;
-    flex-direction: column; /* Aligns buttons in a column */
-    justify-content: flex-start; /* Aligns buttons to the top */
-  }
-  
-  .welcome-message {
-    margin: 1rem; /* Adjust as needed */
-    color: white; /* Ensures the welcome message is visible */
-  }
-  
-  .btn {
-    width: 100%; /* Full width for buttons */
-    margin: 0.5rem 0; /* Space between buttons */
-    padding: 0.75rem; /* Ample padding for buttons */
-    font-size: 1rem; /* Consistent font size */
-  }
-  
-  .table {
-    color: white !important;
-    width: 60% !important;
-    margin-bottom: 0rem !important;
-  }
-  
-  .tipHeader {
-    text-align: center;
-  }
-  
-  .highlighted-section {
-    color: white;
-    font-weight: bold;
-    width: 25rem;
-    height: 4.5rem;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  /* Other styles remain unchanged */
-  
-  .maincontent {
-    padding: 20px; /* Add padding to the main content area */
-  }
-  
-  .feedbackDiv {
-    margin-bottom: 3rem;
-  }
-  
-  .notifyDivs {
-    display: flex;
-    justify-content: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+.landing-page {
+  background-image: url("/static/images/image.jpg");
+  background-size: cover;
+  color: azure !important;
+  margin-left: 200px; /* Space for the navbar */
+  height: 100vh; /* Full height */
+}
+
+.navbar {
+  width: 200px; /* Fixed width for the vertical navbar */
+  position: fixed; /* Fixed position on the left side */
+  top: 0;
+  left: 0; /* Sticks to the left margin */
+  height: 100%; /* Full height */
+  z-index: 999; /* Ensure it stays above other content */
+  padding-top: 1rem; /* Space at the top */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
+  background-color: #343a40; /* Same as bg-dark */
+  display: flex;
+  flex-direction: column; /* Aligns buttons in a column */
+  justify-content: flex-start; /* Aligns buttons to the top */
+}
+
+.welcome-message {
+  margin: 1rem; /* Adjust as needed */
+  color: white; /* Ensures the welcome message is visible */
+}
+
+.btn {
+  width: 100%; /* Full width for buttons */
+  margin: 0.5rem 0; /* Space between buttons */
+  padding: 0.75rem; /* Ample padding for buttons */
+  font-size: 1rem; /* Consistent font size */
+}
+
+.table {
+  color: white !important;
+  width: 60% !important;
+  margin-bottom: 0rem !important;
+}
+
+.tipHeader {
+  text-align: center;
+}
+
+.highlighted-section {
+  color: white;
+  font-weight: bold;
+  width: 25rem;
+  height: 4.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Other styles remain unchanged */
+
+.maincontent {
+  padding: 20px; /* Add padding to the main content area */
+}
+
+.feedbackDiv {
+  margin-bottom: 3rem;
+}
+
+.notifyDivs {
+  display: flex;
+  justify-content: center;
+}
