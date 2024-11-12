@@ -1,8 +1,6 @@
 ## Contributing:
 
-* If you would like to contribute and collaborate with this repository, then please inform us through email at popcornpicks777@gmail.com.
-
-## Purpose of Contributing:
+### Purpose of Contributing:
 
 * To develop our product and take it to the next level.
 * To enhance the already existing feature.
@@ -13,61 +11,46 @@
 * Help us to scale the system to a larger database
 * To run the email notifier feature - make your own Gmail account and password and replace the same in the utils.py(function: send_email_to_user(recipient_email, categorized_data))
 
-## Our Table Of Contents
-
-- .github/workflows  
-  - all GitHub workflow YAML files
-    
-- proj3  
-   - README.md
-   - Proj3Changes.md
-     
-- src  
-  - prediction_scripts    
-     - item_based.py   
-  - recommenderapp
-    - static
-      - script.js
-      - stylesheet.css
-      - wall.js
-    - templates
-      - landing_page.html
-      - login.html
-      - profile.html
-      - review.html
-      - search_page.html
-      - success.html
-      - wall.html
-    - app.py
-    - search.py
-    - utils.py
-  - init.sql
-  - movies.sql
-  
-- test  
-    - test_predict.py  
-    - test_search.py  
-    - test_util.py  
-  
-- .gitignore
-
-- CHAT.md
-
-- CITATION.md
-
-- CODE_OF_CONDUCT.md
-
-- CONTRIBUTING.md
-
-- Dependencies.md
-
-- LICENSE
-
-- README.md
-
-- requirements.txt
-
-- setup.py
+### Our Table Of Contents
+```
+.
+├── app
+│   ├── init_db.py
+│   ├── instance
+│   │   └── site.db
+│   ├── run.py
+│   ├── src
+│   │   ├── __init__.py
+│   │   ├── item_based.py
+│   │   ├── models.py
+│   │   ├── __pycache__
+│   │   ├── routes.py
+│   │   ├── search.py
+│   │   ├── static
+│   │   ├── templates
+│   │   └── utils.py
+│   └── test
+│       ├── __init__.py
+│       ├── __pycache__
+│       ├── test_predict.py
+│       ├── test_search.py
+│       └── test_util.py
+├── asset
+│   ├── demo.gif
+│   ├── email.png
+│   ├── execution.gif
+│   ├── group12.png
+│   ├── header_display.png
+│   ├── system_architecture.svg
+│   └── SystemArch.png
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── data
+│   └── movies.csv
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
 
 ## Suggesting Enhancements
 
@@ -104,7 +87,7 @@ Any suggested enhancements like adding new features or improving existing functi
 
 ## Code of Conduct:
 
-* Please go through the [Code of Conduct](https://github.com/brwali/PopcornPicks/blob/master/CODE_OF_CONDUCT.md) before you begin contributing. This project and everyone participating in it is governed by the Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to popcornpicks777@gmail.com.
+* Please go through the [Code of Conduct](https://github.com/tanmaypardeshi/PopcornPicks/blob/master/CODE_OF_CONDUCT.md) before you begin contributing. This project and everyone participating in it is governed by the Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to popcornpicks504@gmail.com.
 
 ## Pull Request Submission Guidelines
 
@@ -124,7 +107,3 @@ Any suggested enhancements like adding new features or improving existing functi
 * Add comments in the code so that a new contributor can understand the functionality of the modules easily
 * `black` is used as linter
 * 'Pylint' used for proper coding standards
-
-## Governal Policies
-
-All contributions will be carefully reviewed by our entire development team. We will discuss the advantages and disadvantages of adding the change, and a final decision will be decided based on a vote, with all members' votes having equal weight.
