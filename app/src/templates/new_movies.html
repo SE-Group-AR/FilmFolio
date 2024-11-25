@@ -1,0 +1,33 @@
+{% extends 'shared/layout.html' %}
+
+{% block extracss %}
+<div class="container" style="margin-top: 60px;">
+  <div class="heading1">
+      <!-- Heading for new movies -->
+      <h2><center>🍿 New Movies Coming Soon! 🍿</center></h2>
+      <h6 class="tipHeader">✨Tip: Stay tuned for the latest releases! ✨</h6>
+  </div>
+  {% if show_message %}
+  <div class="alert alert-danger" role="alert">
+    Could not fetch new movies
+  </div>
+  {% else %}
+  <div class="row" style="margin-top: 25px;">
+      <div class="col-md-12">
+          <!-- Movie List Section -->
+          <h2>New Releases:</h2>
+          <ul class="list-group" id="newMoviesList">
+              <!-- Loop through the movies and dynamically generate list items -->
+              {% for movie in movies %}
+                  <li class="list-group-item">
+                      <h3>{{ movie.title }}</h3>
+                      <p>Release Date: {{ movie.release_date }}</p>
+                  </li>
+              {% endfor %}
+          </ul>
+      </div>
+  </div>
+  {% endif %}
+</div>
+<br /><br /><br />
+{% endblock %}
