@@ -52,6 +52,7 @@
         {% if current_user.is_authenticated %}
           <a type="button" class="btn btn-success ms-auto" href="{{ url_for('chat_page') }}">Movie Chat</a>
           <a type="button" class="btn btn-success ms-2" href="{{ url_for('movie_page') }}">Latest Reviews</a>
+          <a type="button" class="btn btn-success ms-2" href="{{ url_for('trends_page') }}">Trends</a>
           <a type="button" class="btn btn-success ms-1" href="{{ url_for('new_movies') }}">New Movies</a>
           {% if search is true %}
             <a type="button" class="btn btn-success ms-2" href="{{url_for('profile_page') }}">Profile Page</a>
