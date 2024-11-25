@@ -19,7 +19,7 @@ from src.item_based import recommend_for_new_user
 from src.models import User, Movie, Review
 
 load_dotenv()
-TMDB_API_KEY = os.getenv("TMDB_API_KEY")
+TMDB_API_KEY = "82be1210519bcb327ddfbcce69248e51"
 
 @app.route("/", methods={"GET"})
 @app.route("/home", methods={"GET"})
@@ -283,7 +283,7 @@ def new_movies():
         API to fetch new movies
     """
     # Replace YOUR_TMDB_API_KEY with your actual TMDb API key
-    tmdb_api_key = TMDB_API_KEY
+    tmdb_api_key = "e547e17d4e91f3e62a571655cd1ccaff"
     endpoint = 'https://api.themoviedb.org/3/movie/upcoming'
 
     # Set up parameters for the request
@@ -309,3 +309,21 @@ def new_movies():
         return render_template('new_movies.html', movies=movie_data, user=current_user)
     return render_template('new_movies.html', show_message=True,
                            message='Error fetching movie data')
+
+@app.route("/trends", methods=["GET"])
+def trends_page():
+    """
+    Renders the trends page with the latest and trendy movies.
+    """
+    # Fetch trending movies from an API or database
+    trending_movies = fetch_trending_movies()
+    return render_template("trends.html", movies=trending_movies)
+
+def fetch_trending_movies():
+    """
+    Fetch the trending movies from The Movie Database (TMDB) API.
+    """
+    url = f"https://api.themoviedb.org/3/trending/movie/week?api_key={TMDB_API_KEY}"
+    response = requests.get(url, timeout=10)
+    data = response.json()
+    return data.get("results", [])
